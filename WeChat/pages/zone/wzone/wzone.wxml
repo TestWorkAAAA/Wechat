@@ -1,0 +1,75 @@
+<view class="container">
+  <div class="content">
+    <view class="input-box" bindtap="bindclick">
+      <form>
+        <textarea bindinput="input" name="name" rows="80" cols="80" value="{{context}}" placeholder="记录每一天" style="font-size:{{fontSize}};"></textarea>
+      </form>
+    </view>
+  </div>
+
+  <view class="operate-box">
+    <view class="operation-list flex">
+      <view class="item" bindtap="emojiShowHide">
+        <image src="/images/zone/emoji.png"></image>
+      </view>
+      <view class="item" bindtap="photoShowHide">
+        <image src="/images/zone/creame.png"></image>
+      </view>
+      <view class="item" bindtap="save">
+        <image src="/images/zone/save.png"></image>
+      </view>
+      <view class="item" bindtap="fontShowHide">
+        <image src="/images/zone/font.png"></image>
+      </view>
+
+    </view>
+
+    <!-- 设置字体大小颜色盒子 -->
+    <view class="font-box {{fontShow?'emoji-move-in':'emoji-move-out'}}">
+      <view>
+        <view class="font">
+          <text>字号</text>
+          <view class="size">
+            <block wx:for="{{sizes}}" wx:key="item">
+              <view class="size-item">
+                <view class="fontSize" id="{{item.index}}" bindtap="changeFont" data-fontsize="{{item.size}}" style="font-size:{{item.size}}">Aa</view>
+                <view wx:if="{{item.selected == true}}">
+                  <image src="/images/zone/selected.png" class="selected"></image>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- emoji表情盒子 -->
+    <view class="emoji-box {{isShow ? 'emoji-move-in' : 'emoji-move-out'}}">
+      <scroll-view scroll-y="true" bindscroll="emojiScroll" style="height:200px">
+        <block wx:for="{{emojis}}" wx:for-item="e" wx:key="">
+          <view class="emoji-cell">
+            <image class="touch-active" bindtap="emojiChoose" src="http://soupu.oss-cn-shanghai.aliyuncs.com/emoji/{{e.emoji}}.png" data-emoji="{{e.char}}" data-oxf="{{e.emoji}}"></image>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+
+    <!-- 添加图片盒子 -->
+    <view class="photo-box {{photoShow ? 'emoji-move-in' : 'emoji-move-out'}}">
+      <scroll-view scroll-x="true" bindscroll="photoScroll">
+        <block wx:for="{{photos}}" wx:key="item">
+          <view class="photo-cell">
+            <image class="touch-active" src="{{item}}"></image>
+            <view class="delete" id="{{item}}" bindtap="deletePhoto">
+            </view>
+          </view>
+        </block>
+        <view class="addButton" bindtap="addPhoto">
+          <text class="desc">添加图片</text>
+        </view>
+      </scroll-view>
+    </view>
+
+  </view>
+  <view class="location" style="{{locationStyle}}" bindtap="getLocation">{{location}}</view>
+</view>

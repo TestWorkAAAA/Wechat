@@ -1,0 +1,29 @@
+<view class="input-wrap">
+  <view class="input-box">
+    小组名称：
+    <input class="num-input" placeholder="*必填" type="text" maxlength="10" bindinput="teamNameInput" />
+  </view>
+
+  <view class="input-box">
+    小组人数：
+    <input class="num-input" placeholder="*必填" type="number" maxlength="1" bindinput="teamNumInput" />
+  </view>
+
+  <view class="input-box">
+    小组计划：
+    <input class="num-input" placeholder="*必填" type="text" maxlength="10" bindinput="teamPlanInput" />
+  </view>
+
+  <view class="input-box">
+    截至时间：
+      <view class="date">
+        <picker mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange" >
+          {{dateValue}}
+        </picker>
+      </view>
+  </view>
+
+</view>
+<view class="page__bd page__bd_spacing create-btn">
+  <button class="weui-btn" style="background-color:#39b5de" type="primary" loading="{{loading}}" bindtap="createTeam">创建小组</button>
+</view>

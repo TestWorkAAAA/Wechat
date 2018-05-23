@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="swipercontainer">
+  <swiper indicator-dots="true" autoplay="true" interval="3000">
+    <swiper-item>
+      <image src="/images/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='content'>
+  <view class='line'></view>
+  <view class='title' style='text-indent:1em;'>你的同桌</view>
+  <view class='hr'></view>
+  <view class='navs'>
+    <view class='nav' bindtap="buildteam">
+      <view>
+        <image src="/images/Buildteam.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>建立小组</view>
+    </view>
+
+    <view class='nav' bindtap="jointeam">
+      <view>
+        <image src="/images/Jointeam.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>加入小组</view>
+    </view>
+
+    <view class='nav' bindtap="buildclass">
+      <view>
+        <image src="/images/Buildclass.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>建立课堂</view>
+    </view>
+
+    <view class='nav' bindtap="joinclass">
+      <view>
+        <image src="/images/Joinclass.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>加入课堂</view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='hr'></view>
+  <view class='title' style='text-indent:1em;'>校园服务</view>
+  <view class='hr'></view>
+  <view class='navs'>
+    <view class='nav' bindtap="showgrade">
+      <view>
+        <image src="/images/service/Showgrade.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>查成绩</view>
+    </view>
+
+    <view class='nav' bindtap="showlesson">
+      <view>
+        <image src="/images/service/Showlesson.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>查课表</view>
+    </view>
+
+    <view class='nav' bindtap="showtrainingroom">
+      <view>
+        <image src="/images/service/Trainingroom.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>查研修室</view>
+    </view>
+
+    <view class='nav' bindtap="showmore">
+      <view>
+        <image src="/images/service/Showmore.png" style='width:38px;height:38px'></image>
+      </view>
+      <view>更多服务</view>
+    </view>
+  </view>
+</view>

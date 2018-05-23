@@ -1,0 +1,18 @@
+<view>
+  <view class="feedback">
+    <form>
+      <textarea name="evaContent" maxlength="500" placeholder="投诉原因"bindinput="bindInputCon"/>
+      <view class="feedback-con">
+        <view class="ui-border-b">
+          <text>投诉商家名：</text>
+          <input bindinput="bindInputWx" placeholder="请输入商家名" class='inputlabel'/>
+        </view>
+        <view>
+          <text> 投诉商品名</text>
+          <input bindinput="bindInputEmail" placeholder="请输入商品名字"/>
+        </view>
+      </view>
+      <button formType="submit" bindtap="submitFeedback" disabled="{{subdisabled}}" type="primary" size="mini">提交</button>
+    </form>
+  </view>
+</view>

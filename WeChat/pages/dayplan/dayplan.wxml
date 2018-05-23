@@ -1,0 +1,28 @@
+<view class="input-wrap">
+  <view class="input-box">
+    计划名称：
+    <input class="num-input" placeholder="*必填" type="text" maxlength="10" bindinput="planName" />
+  </view>
+
+  <view class="input-box">
+    开始时间：
+      <view class="date">
+        <picker mode="time" value="{{dateValue}}" start="07:01" end="21:01" bindchange="datePickerBindchange" >
+          {{dateValue}}
+        </picker>
+      </view>
+  </view>
+
+  <view class="input-box">
+    截至时间：
+      <view class="date">
+        <picker mode="time" value="{{dateValue1}}" start="09:01" end="23:30" bindchange="datePickerBindchange1" >
+          {{dateValue1}}
+        </picker>
+      </view>
+  </view>
+
+</view>
+<view class="page__bd page__bd_spacing create-btn">
+  <button class="weui-btn" style="background-color:#39b5de" type="primary" loading="{{loading}}" bindtap="createPlan">保存</button>
+</view>

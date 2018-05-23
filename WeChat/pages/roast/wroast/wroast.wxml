@@ -1,0 +1,6 @@
+<!--pages/service/roast/roast.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">实名吐槽</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">匿名吐槽</view>
+</view>
+

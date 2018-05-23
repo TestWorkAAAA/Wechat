@@ -1,0 +1,70 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/class/buildclass/buildclass",
+    "pages/class/joinclass/joinclass",
+    "pages/team/buildteam/buildteam",
+    "pages/team/jointeam/jointeam",
+    "pages/data/udata/udata",
+    "pages/data/ddata/ddata",
+    "pages/zone/wzone/wzone",
+    "pages/zone/lzone/lzone",
+    "pages/roast/wroast/wroast",
+    "pages/roast/rroast/rroast",
+    "pages/service/service",
+    "pages/service/trainingroom/trainingroom",
+    "pages/service/searchbooks/searchbooks",
+    "pages/service/mybooks/mybooks",
+    "pages/service/appointmenttime/appointmenttime",
+    "pages/service/grades/grades",
+    "pages/service/lesson/lesson",
+    "pages/mine/mine",
+    "pages/dayplan/dayplan",
+    "pages/feedback/feedback",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#39b5de",
+    "navigationBarTitleText": "你的同桌",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "images/tab/02.png",
+        "iconPath": "images/tab/01.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tab/10.png",
+        "iconPath": "images/tab/09.png",
+        "pagePath": "pages/data/udata/udata",
+        "text": "资料"
+      },
+      {
+        "selectedIconPath": "images/tab/06.png",
+        "iconPath": "images/tab/05.png",
+        "pagePath": "pages/zone/wzone/wzone",
+        "text": "空间"
+      },
+      {
+        "selectedIconPath": "images/tab/08.png",
+        "iconPath": "images/tab/07.png",
+        "pagePath": "pages/roast/wroast/wroast",
+        "text": "吐槽"
+      },
+      {
+        "selectedIconPath": "images/tab/04.png",
+        "iconPath": "images/tab/03.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

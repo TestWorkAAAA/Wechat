@@ -1,0 +1,82 @@
+<view class='mine'>
+  <view class='img'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='hr'></view>
+  <view class='account'>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+    <view class="student-id" bindtap='bangding'>绑定学号</view>
+    <view>{{userInfo.openId}}</view>
+    <view class='nav'></view>
+  </view>
+</view>
+
+  <view class='content'>
+    <view class='item' bindtap='dayplay'>
+      <view class='icon'>
+        <image src='/images/mine/dayplan.png' style='width:33px;height:33px;'></image>
+      </view>
+      <view class='itemName'>
+        <view>每日计划 </view>
+      </view>
+      <view class='right'>
+        <text class='opr'>制定/查看计划  > </text> </view>
+    </view>
+    <view class='hr'></view>
+
+    <view class='item'>
+      <view class='icon'>
+        <image src='/images/mine/plan.png' style='width:22px;height:21px;'></image>
+      </view>
+      <view class='itemName'>
+        <view>总计划 </view>
+      </view>
+      <view class='right'>
+        <text class='opr'>总计划 </text> </view>
+    </view>
+    <view class='hr'></view>
+
+    <view class='item' bindtap='showdairy'>
+      <view class='icon'>
+        <image src='/images/mine/diary.png' style='width:22px;height:21px;'></image>
+      </view>
+      <view class='itemName'>
+        <view>日记本 </view>
+      </view>
+      <view class='right'>
+        <text class='opr' bindtap='showModal'>点击显示 > </text> </view>
+    </view>
+    <view class='hr'></view>
+
+    <view class='item' bindtap='feedback'>
+      <view class='icon'>
+        <image src='/images/mine/feedback.png' style='width:22px;height:21px;'></image>
+      </view>
+      <view class='itemName'>
+        <view>反馈 </view>
+      </view>
+      <view class='right'>
+        <text class='opr'>进行反馈 > </text> </view>
+    </view>
+    <view class='hr'></view>
+
+    <view class='item'>
+      <view class='icon'>
+        <image src='/images/mine/coin.png' style='width:22px;height:21px;'></image>
+      </view>
+      <view class='itemName'>
+        <view>金币值 </view>
+      </view>
+      <view class='right'>
+        <text class='opr'> 总金币值 </text> </view>
+    </view>
+    <view class='hr'></view>
+
+
+
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+
+
+  </view>
+
+  

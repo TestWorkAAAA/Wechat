@@ -1,0 +1,36 @@
+ <view class="hot">
+    <block wx:for="{{hotInfo}}" wx:key="item">
+      <view class="hcontent" id="{{item.id}}" bindtap="toDetail">
+        <view class="hot_top flex">
+          <view class="ht_left">
+            <image src="{{item.avatar}}"></image>
+          </view>
+          <view class="ht_main flex_auto">
+            <text class="username">{{item.username}}</text>
+            <text class="time">{{item.time}}</text>
+          </view>
+        </view>
+        <view class="hot_content">
+          <view class="type">{{item.type}}</view>
+          <view class="text">{{item.content}}</view>
+          <view class="image" wx:for="{{item.images}}" wx:key="item">
+            <image src="{{item}}"></image>
+          </view>
+          <view wx:if="{{item.video}}" class="video">
+            <video src="{{item.video}}"></video>
+          </view>
+        </view>
+        <view class="hot_bottom flex">
+          <view class="hb_left flex_auto">{{item.watchNum}}浏览</view>
+          <view class="hb_right">
+            <view class="shareBox"></view>
+            <text class="share">{{item.share}}</text>
+            <view class="likeBox"></view>
+            <text class="like">{{item.like}}</text>
+            <view class="replyBox"></view>
+            <text class="reply">{{item.reply}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>

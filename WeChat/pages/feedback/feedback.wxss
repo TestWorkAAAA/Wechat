@@ -1,0 +1,54 @@
+page {
+  background-color: #f3f3f3;
+}
+
+.feedback {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.feedback textarea {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+
+.feedback-con {
+  margin-top: 40rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedback-con view {
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 40rpx;
+  background-color: #fff;
+}
+
+.feedback-con view input {
+  display: inline-block;
+  position: absolute;
+  top: 14rpx;
+  left: 300rpx;
+}
+
+.feedback button {
+  width: 500rpx;
+  height: 100rpx;
+  border-radius: 8rpx;
+  position: relative;
+  overflow: hidden;
+  background: #ffb80d;
+  color: #fff;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20rpx;
+}
